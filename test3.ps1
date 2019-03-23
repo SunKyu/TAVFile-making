@@ -3,7 +3,7 @@ $file = $ScriptDir + "\examplep.txt"
 $samplePath = $ScriptDir + "\samples.ps1"
 . $samplePath
 
-$csvPath = $ScriptDir + "\2018-12-12AD11DETAIL.csv"
+$csvPath = $ScriptDir + "\2018-12-12AD3DETAIL.csv"
 Write-Host $csvPath
 
 function loadrow{
@@ -139,7 +139,7 @@ ForEach ($row in $rows){
     }
     $count = $count + 1
     Write-Output $temp
-    $path = $ScriptDir + "\ad11\" + $rowdic.CNTR + ".TAV"
+    $path = $ScriptDir + "\ad3\" + $rowdic.CNTR + ".TAV"
     Write-Host $path
     Set-Content -Path $path $temp
 }
